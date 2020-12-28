@@ -3,4 +3,5 @@ A javaFX program - a game of BlackJack with button commands
 # What I Learned
 How to construct JavaFX programs <br >
 How to design basic user interfaces <br >
+How to design UI option menus <br >
 How to use Java to design simple games <br >
