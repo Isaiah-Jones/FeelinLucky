@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="520.0" prefWidth="970.0" style="-fx-background-color: Green;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="feelin.lucky.FeelinLuckyFXMLController">
+  <children>
+    <ImageView fx:id="firstCard" fitHeight="106.5" fitWidth="142.0" layoutX="10.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true" style="" />
+    <ImageView fx:id="secondCard" fitHeight="106.5" fitWidth="142.0" layoutX="152.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="thirdCard" fitHeight="106.5" fitWidth="142.0" layoutX="294.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="fourthCard" fitHeight="106.5" fitWidth="142.0" layoutX="436.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true" />
+    <Button fx:id="btnHit" layoutX="58.0" layoutY="452.0" mnemonicParsing="false" onAction="#hitMe" text="Hit" />
+    <Button fx:id="btnHit2" layoutX="200.0" layoutY="452.0" mnemonicParsing="false" onAction="#hitMe2" text="Hit" />
+    <Button fx:id="btnHit3" layoutX="342.0" layoutY="452.0" mnemonicParsing="false" onAction="#hitMe3" text="Hit" />
+    <Label fx:id="dealerName" layoutX="365.0" layoutY="42.0" text="Dealer:" />
+    <Label fx:id="playerScore" layoutX="735.0" layoutY="463.0" prefWidth="29.0" text="" />
+    <Label fx:id="playerName" layoutX="694.0" layoutY="463.0" text="You:" />
+    <Label fx:id="dealerScore" layoutX="423.0" layoutY="42.0" text="" />
+    <Button fx:id="btnHit4" layoutX="484.0" layoutY="452.0" mnemonicParsing="false" onAction="#hitMe4" text="Hit" />
+    <Button fx:id="btnSet" layoutX="856.0" layoutY="452.0" mnemonicParsing="false" onAction="#setScore" text="Set" />
+    <MenuBar layoutX="0.0" layoutY="-1.0" prefWidth="970.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#menuNewGameAction" text="New Game" />
+            <MenuItem mnemonicParsing="false" onAction="#menuExitAction" text="Close" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" onAction="#menuHelpAction" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#menuAboutAction" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+  </children>
+</AnchorPane>
